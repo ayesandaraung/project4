@@ -1,0 +1,201 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <style>
+      .navbar{
+          z-index: 1;
+      }
+      #mySidebar{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+      }
+      #changeTable1{
+        position: absolute;
+        left: 0px;
+        top: 120px;
+      }
+      #changeTable2{
+          width: 100%;
+          text-align: center;
+      }
+      #imgStyle{
+          width: 70;
+          height:70;
+      }
+      .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:white;
+  color: white;
+  text-align: center;
+  border-top-style: inset;
+}
+p{
+    color:black;
+}
+  </style>
+    </head>
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="SignIn.html" class="w3-bar-item w3-button w3-green" style="height: 80px;"><i class="fa fa-user-circle" style="width: 30px;height: 30px;"></i><br/>Sign In</a>
+  <a href="ItemsPage.html" class="w3-bar-item w3-button">Items</a>
+  <a href="PPEPage.html" class="w3-bar-item w3-button">PPE</a>
+  <a href="CCTVDonorPage.html" class="w3-bar-item w3-button">CCTV</a>
+  <a href="#" class="w3-bar-item w3-button">စီစင်သူ</a>
+  <a href="SharePage.html" class="w3-bar-item w3-button">Share app</a>
+</div>
+
+<!-- Page Content -->
+<nav class="navbar navbar-expand-sm w3-green fixed-top">
+<div class="w3-bar w3-green">
+  <button class="w3-bar-item w3-button w3-green w3-xlarge w3-left" id="btn1" onclick="w3_open()">☰</button>
+  <input type="text" class="w3-bar-item" style="border-radius: 20px;width: 50%; margin-top: 7px; margin-left: 10%;display:none" id="searchBtn1"/>
+  <button class="w3-bar-item" style="display: none;margin-top: 12px;background-color: #08a50883;" id="searchBtn2" onclick="closeSearch()"><i class="fa fa-times"></i></button>
+  <button class="w3-bar-item w3-button w3-green w3-xlarge w3-right" id="searchBtn3" onclick="openSearch()" style="display: block;"><i class="fa fa-search"></i></button>
+  <div class="w3-container" >
+    <h1>အလှူရှင်</h1>
+  </div>
+</div>
+</nav>
+<div class="w3-container">
+    <table class="w3-table w3-bordered" id="changeTable1">
+        <tbody>
+            <tr>
+                
+                <td>
+                    <a href="AHluShinPage.html">
+                    <p class="w3-left">1မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image" width="70px" height="70px">
+                </a>
+                </td>
+            
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">2မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image" width="70px" height="70px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">3မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="Image/person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="Image/person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p>  <img src="Image/person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="w3-left">မချစ်သက်‌‌ေ<br/>PPE+Mask<br/>180000</p> <img src="person.jpg" class="w3-right" id="imgStyle" alt="image">
+                </td>
+            </tr>
+        </tbody>
+        
+    </table>
+</div>
+<div class="footer">
+    <table id="changeTable2">
+        <tr>
+            <td><a href="HomePage.html"><i class="fas fa-donate" style="color: black;"></i><br/><p>အလှူရှင်</p></a></td>
+            <td><a href="AHluKhanPage.html"><i class="fa fa-medkit" style="color: black;"></i><br/><p>အလှူခံ</p></a></td>
+            <td><a href="SaYinMyarPage.html"><i class="fas fa-newspaper" style="color: black;"></i><br/><p>စာရင်းများ</p></a></td>
+            <td><a href="#"><i class="fas fa-comment" style="color: black;"></i><br/><p>Chat</p></a></td>
+        </tr>
+    </table>
+  </div>
+
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+//   document.getElementById("mySidebar").style.zIndex = "1";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function openSearch()
+{
+    document.getElementById("searchBtn1").style.display="block";
+    document.getElementById("searchBtn2").style.display="block";
+    document.getElementById("searchBtn3").style.display="none";
+}
+function closeSearch()
+{
+    document.getElementById("searchBtn1").style.display="none";
+    document.getElementById("searchBtn2").style.display="none";
+    document.getElementById("searchBtn3").style.display="block";
+}
+</script>
+     
+</body>
+</html> 

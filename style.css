@@ -1,0 +1,242 @@
+#banner {
+    width: 100%;
+    height: 14vh;
+    background-position: center center;
+    background-size: cover;
+    background-color: #00994C;
+    text-align: center;
+}
+.search{
+    margin-left: 500px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin:0px;
+}
+.navbar-default {
+    transition: 500ms ease;
+    background: #00994C;
+}
+
+.navbar-default.scrolled {
+    background: #161E33;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+.sidenavform{
+    background-color: white;
+    height: 100%;
+    margin-top: -59px;
+}
+.sidenavicon{
+    background-color: #00994C;
+}
+/* .sidenavdiv{
+    margin-left: 20px;
+} */
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+  overflow: auto;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+header{
+    background-color: #00994C;
+    width: 100%;
+    display:block;
+margin-bottom: 100px;
+  }
+   @media (min-width: 768px) {
+    .sidebar {
+      position: fixed;
+      top: 51px;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      display: block;
+      padding: 20px;
+      overflow-x: hidden;
+      overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+      background-color: #f5f5f5;
+      border-right: 1px solid #eee;
+    }
+    .navbar-inverse {
+      background-color: #F8F8F8; // background color of navbar
+      border-color: #E7E7E7; // border color of navbar
+    }
+  }
+  @media (max-width: 768px) {
+    body {
+      background-color: #000; // black color for background
+    }
+  }
+  #rcorners1 {
+  border-radius: 25px;
+  background: #ccffb3;
+  color:  #00994C;
+    width: 100%;
+  padding: 20px; 
+  width: 100px;
+  height: 100px;  
+  font-size: 35px;
+  text-align: center;
+}
+#rcorners2 {
+  border-radius: 50%;
+  background: #ccffb3;
+  color:  #00994C;
+    width: 100%;
+  padding: 20px; 
+  width: 50px;
+  height: 50px;  
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+#rcorners3 {
+  border-radius: 50%;
+  background: #ccffb3;
+  color:  #00994C;
+    width: 100%;
+  padding: 20px; 
+  width: 70px;
+  height: 70px;  
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+#rcorners4 {
+  border-radius:0%;
+    background-image: linear-gradient(white, #d9d9d9, black);
+  color:  white;
+    width: 100%;
+  padding: 20px; 
+  width: 100%;
+  height: 50%;  
+  font-size: 70px;
+  text-align: bottom;
+  font-weight: bold;
+}
+#ullist:hover{
+    background-color: #f2f2f2
+;
+}
+.wrap{
+     min-height: 100%;
+}
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+  width: 100%;
+}
+a:hover {
+  color: black;
+}
+#footer {
+  position: relative;
+  margin-top: -10px; /* negative value of footer height */
+  height: 100px;
+  clear:both;
+  padding-top:20px;
+  background-color: white;
+  border-top: 3px solid #e6e6e6;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} 
+
+
+/*Navbar link <a> color*/
+.nav-link a{
+    color: white;
+}
+/*Modal box position*/
+.modal {
+    
+    position: fixed;
+}
+
+/*Modal box height*/
+    .modal-dialog {
+ 
+          height:700px !important; 
+}
+ /*Modal content height*/
+.modal-content {
+ 
+    /* 80% of window height */
+    height: 90%;
+}    
+/*Modal title*/   
+ .modal-title{
+    color: white;
+    padding-left: 160px;
+ }
+
+.modal-header {
+ 
+    background-color: #17a649;
+}
+/*form group icon*/
+.form-group i { 
+            position: absolute; 
+} 
+
+.form-group { 
+            width: 100%; 
+            margin-bottom: 10px; 
+            box-sizing: border-box;
+            padding-top: 20px;
+} 
+.icon {  
+            color: green; 
+            min-width: 50px; 
+            padding-top: 10px;
+            padding-left: 10px; 
+} 
+.form-control { 
+            width: 100%; 
+            padding: 22px; 
+            padding-left: 30px; 
+            border : none;
+            border-bottom: 1.2px solid gray;
+            background-color: #f0f5f2;
+} 
+.form-control:focus{
+        background-color: #f0f5f2;
+}
+input[type=text]:focus {
+        border-bottom: 2px solid #17a649;
+        box-shadow:none;
+}
+input[type=number]:focus {
+        border-bottom: 2px solid #17a649;
+        box-shadow:none;
+}
+.btn{
+    margin-right: 200px;
+    color: white;
+    background-color: #17a649;
+}
+
+
+</style>
+
